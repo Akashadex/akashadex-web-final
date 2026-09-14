@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Security Benefit &amp; COLA Calculator Tool — Akashadex</title>
+<meta name="description" content="Calculate your estimated monthly Social Security benefit payouts, projected 2027 COLA increase, and net Medicare Part B impact in real time.">
+<link rel="canonical" href="https://akashadex.com/store/social-security-calculator.html">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=6">
+</head>
+<body>
+
+<header class="site-header site-header-inner">
+  <div class="wrap">
+    <a href="/" class="brand-link">
+      <img src="/images/favicon.png" alt="Akashadex" class="brand-logo">
+      <span class="brand-text">Akashadex</span>
+    </a>
+
+    <div class="header-nav-group">
+      <nav class="site-nav" id="siteNav">
+        <a href="/guides/">Guides</a>
+        <a href="/store/" class="active">Products</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-btn" id="searchBtn" aria-label="Search" title="Search (Ctrl+K)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="article-header">
+  <div class="wrap measure">
+    <div class="kicker">INTERACTIVE TOOL</div>
+    <h1>Social Security Benefit &amp; COLA Calculator</h1>
+    <p class="article-subtitle" style="margin-top:0.5rem; color:var(--text-secondary);">Estimate your net monthly benefit increase under projected 2027 COLA rates after Medicare Part B deductions.</p>
+  </div>
+</section>
+
+<article class="article-body">
+  <div class="wrap">
+    
+    <div class="calculator-tool-container">
+      <div class="calc-grid">
+        <div class="calc-inputs-col">
+          <h3 style="margin-bottom:1.5rem; font-family:var(--font-sans); font-size:1.2rem;">Adjust Calculation Inputs</h3>
+
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <span class="calc-label">Current Monthly Social Security Check</span>
+              <span class="calc-value-badge" id="benefitVal">$2,000 / mo</span>
+            </div>
+            <input type="range" id="benefitRange" class="calc-range-slider" min="500" max="4500" step="50" value="2000">
+          </div>
+
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <span class="calc-label">Projected 2027 COLA Rate</span>
+              <span class="calc-value-badge" id="colaVal">3.6%</span>
+            </div>
+            <input type="range" id="colaRange" class="calc-range-slider" min="1.0" max="6.0" step="0.1" value="3.6">
+          </div>
+
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <span class="calc-label">Medicare Part B Monthly Premium</span>
+              <span class="calc-value-badge" id="medicareVal">$185 / mo</span>
+            </div>
+            <input type="range" id="medicareRange" class="calc-range-slider" min="150" max="250" step="5" value="185">
+          </div>
+
+          <div style="font-size:0.85rem; color:var(--text-muted); margin-top:1rem;">
+            * COLA adjustment applies automatically to gross benefit amounts prior to Medicare deductions.
+          </div>
+        </div>
+
+        <div class="calc-results-col">
+          <div class="calc-results-card">
+            <div class="calc-result-title">New Estimated Monthly Check</div>
+            <div class="calc-result-number" id="netMonthlyResult">$2,072.00</div>
+
+            <div class="calc-breakdown-list">
+              <div class="calc-breakdown-item">
+                <span>Gross Monthly COLA Increase:</span>
+                <strong id="grossIncreaseResult">+$72.00 / mo</strong>
+              </div>
+              <div class="calc-breakdown-item">
+                <span>Annual Gross Gain:</span>
+                <strong id="annualGainResult">+$864.00 / yr</strong>
+              </div>
+              <div class="calc-breakdown-item">
+                <span>Medicare Part B Deduction:</span>
+                <strong id="medicareDeductionResult">-$185.00 / mo</strong>
+              </div>
+              <div class="calc-breakdown-item" style="padding-top:0.5rem; border-top:1px dashed var(--border-light);">
+                <span>Net Increase After Medicare:</span>
+                <strong style="color:var(--accent-teal);" id="netIncreaseResult">+$62.00 / mo</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="measure" style="margin: 0 auto;">
+      <h2>How this calculation works</h2>
+      <p>The Cost-of-Living Adjustment (COLA) is calculated directly on your gross Social Security primary insurance amount. If Medicare Part B is withheld directly from your benefit check, your net deposit will depend on Medicare's updated annual premium rates.</p>
+
+      <h2>Need the complete PDF Money Guide?</h2>
+      <p>Get our complete 50+ page guide with detailed spousal benefit worksheets, survivor benefit claim strategies, and tax threshold tables.</p>
+      
+      <div class="cta-box" style="margin-top:2rem;">
+        <div>
+          <h3>2027 Social Security &amp; Medicare Money Guide</h3>
+          <p>Instant PDF download with full reference tables and worked household scenarios.</p>
+        </div>
+        <a href="/store/" class="btn btn-primary" onclick="window.showToast('Product added to checkout!'); return false;">Buy Full Guide — $9.00</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-col-brand">
+        <a href="/" class="footer-brand">
+          <img src="/images/logo.png" alt="Akashadex" class="footer-logo">
+          <span class="footer-brand-name">Akashadex</span>
+        </a>
+        <p class="footer-tagline">Clear information for better decisions.</p>
+        <p class="footer-desc">Research-backed guides, practical tools and useful data — explained in plain language.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/store/">Tools</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Company</h4>
+        <ul class="footer-links-list">
+          <li><a href="/about/">About Akashadex</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>
+(function() {
+  const benefitRange = document.getElementById('benefitRange');
+  const colaRange = document.getElementById('colaRange');
+  const medicareRange = document.getElementById('medicareRange');
+
+  const benefitVal = document.getElementById('benefitVal');
+  const colaVal = document.getElementById('colaVal');
+  const medicareVal = document.getElementById('medicareVal');
+
+  const netMonthlyResult = document.getElementById('netMonthlyResult');
+  const grossIncreaseResult = document.getElementById('grossIncreaseResult');
+  const annualGainResult = document.getElementById('annualGainResult');
+  const medicareDeductionResult = document.getElementById('medicareDeductionResult');
+  const netIncreaseResult = document.getElementById('netIncreaseResult');
+
+  function calculate() {
+    const benefit = parseFloat(benefitRange.value);
+    const cola = parseFloat(colaRange.value);
+    const medicare = parseFloat(medicareRange.value);
+
+    benefitVal.textContent = '$' + benefit.toLocaleString() + ' / mo';
+    colaVal.textContent = cola.toFixed(1) + '%';
+    medicareVal.textContent = '$' + medicare.toLocaleString() + ' / mo';
+
+    const grossIncrease = benefit * (cola / 100);
+    const newGrossBenefit = benefit + grossIncrease;
+    const newNetBenefit = Math.max(0, newGrossBenefit - medicare);
+    const oldNetBenefit = Math.max(0, benefit - 174.70); // 2024 base premium reference
+    const netIncrease = newNetBenefit - oldNetBenefit;
+
+    netMonthlyResult.textContent = '$' + newNetBenefit.toFixed(2);
+    grossIncreaseResult.textContent = '+$' + grossIncrease.toFixed(2) + ' / mo';
+    annualGainResult.textContent = '+$' + (grossIncrease * 12).toFixed(2) + ' / yr';
+    medicareDeductionResult.textContent = '-$' + medicare.toFixed(2) + ' / mo';
+    netIncreaseResult.textContent = (netIncrease >= 0 ? '+' : '') + '$' + netIncrease.toFixed(2) + ' / mo';
+  }
+
+  benefitRange.addEventListener('input', calculate);
+  colaRange.addEventListener('input', calculate);
+  medicareRange.addEventListener('input', calculate);
+
+  calculate();
+})();
+</script>
+</body>
+</html>

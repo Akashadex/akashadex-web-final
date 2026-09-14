@@ -1,0 +1,74 @@
+[
+  {
+    "id": "prod-1",
+    "title": "Medicare Explained",
+    "description": "A clear breakdown of Medicare parts, costs, and when they actually apply.",
+    "category": "Guides",
+    "price": "$12.00",
+    "meta": "38 pages · PDF",
+    "image": "/images/card-medicare.png",
+    "url": "/store/medicare-explained.html",
+    "badge": "GUIDE",
+    "date": "2026-09-01"
+  },
+  {
+    "id": "prod-2",
+    "title": "Retirement Planner Workbook",
+    "description": "Set your goals, run the numbers, and build a plan that fits your life.",
+    "category": "Workbooks",
+    "price": "$15.00",
+    "meta": "42 pages · PDF",
+    "image": "/images/card-spousal.png",
+    "badge": "WORKBOOK",
+    "url": "/store/retirement-planner-workbook.html",
+    "date": "2026-08-20"
+  },
+  {
+    "id": "prod-3",
+    "title": "Social Security Benefit Calculator",
+    "description": "Estimate your future benefits with personalized inputs and clear results.",
+    "category": "Tools",
+    "price": "$9.00",
+    "meta": "Web Tool · Instant Access",
+    "image": "/images/card-taxes.png",
+    "badge": "TOOL",
+    "url": "/store/social-security-calculator.html",
+    "date": "2026-08-15"
+  },
+  {
+    "id": "prod-4",
+    "title": "Japan Travel Guide",
+    "description": "Everything you need to plan, budget, and make the most of your trip.",
+    "category": "Guides",
+    "price": "$11.00",
+    "meta": "36 pages · PDF",
+    "image": "/images/guide-thumb-1.jpg",
+    "badge": "GUIDE",
+    "url": "/store/japan-travel-guide.html",
+    "date": "2026-07-10"
+  },
+  {
+    "id": "prod-5",
+    "title": "2027 Tax Optimization Checklist",
+    "description": "Actionable steps to streamline your tax deductions and retirement contributions.",
+    "category": "Checklists",
+    "price": "$8.00",
+    "meta": "12 pages · PDF",
+    "image": "/images/card-social-security.png",
+    "badge": "CHECKLIST",
+    "url": "/store/tax-checklist.html",
+    "date": "2026-06-05"
+  },
+  {
+    "id": "prod-6",
+    "title": "Emergency Fund Spreadsheet & Tool",
+    "description": "Calculate exact liquid savings targets based on expense categories and inflation.",
+    "category": "Calculators",
+    "price": "$10.00",
+    "meta": "Excel & Google Sheets",
+    "image": "/images/guide-thumb-3.jpg",
+    "badge": "TOOL",
+    "url": "/store/emergency-fund-calculator.html",
+    "date": "2026-05-12"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "url": "/guides/iphone-18-lineup-guide.html",
+    "title": "iPhone 18 Pro, Pro Max & iPhone Duo: Specs, Prices, Features & Release Dates",
+    "description": "Apple's split-launch lineup fact-checked: iPhone 18 Pro, Pro Max, and the foldable iPhone Duo. Complete specs, international prices, and upgrade advice.",
+    "category": "Technology",
+    "image": "/images/card-iphone-18.png",
+    "date": "SEP 2026",
+    "readTime": "8 MIN READ"
+  },
+  {
+    "url": "/guides/is-coding-dead-in-2026.html",
+    "title": "Is Coding Dead in 2026? The Truth About Programming, AI, and Developer Jobs",
+    "description": "Is programming dying? An honest look at AI coding agents, Stack Overflow developer survey data, junior hiring shifts, and staying valuable in 2026.",
+    "category": "Technology",
+    "image": "/images/card-is-coding-dead.jpg",
+    "date": "SEP 2026",
+    "readTime": "9 MIN READ"
+  },
+  {
+    "url": "/guides/skills-to-build-in-2026.html",
+    "title": "10 Skills to Build in 2026 That Will Actually Matter for Your Career",
+    "description": "A practical guide to the 10 career skills that will actually matter in 2026. Avoid trend fatigue and build capabilities that make you harder to replace.",
+    "category": "Career & Skills",
+    "image": "/images/card-skills-2026.jpg",
+    "date": "SEP 2026",
+    "readTime": "11 MIN READ"
+  },
+  {
+    "url": "/guides/career-paths-harder-for-ai-to-replace.html",
+    "title": "Tired of Coding? Career Paths That Are Harder for AI to Replace",
+    "description": "Burnt out on coding or worried about AI displacement? Explore high-demand career paths that rely on physical presence, human trust, and real-world systems.",
+    "category": "Career & Skills",
+    "image": "/images/card-career-paths-ai.jpg",
+    "date": "SEP 2026",
+    "readTime": "10 MIN READ"
+  },
+  {
+    "url": "/guides/peaceful-countries-to-study-abroad-2026.html",
+    "title": "10 Peaceful Countries to Study Abroad in 2026: Safe, Stable and Student-Friendly Destinations",
+    "description": "A practical guide to the 10 most peaceful, safe, and stable countries to study abroad in 2026. Compare education quality, peace ratings, and living costs.",
+    "category": "Education & Travel",
+    "image": "/images/card-study-abroad.jpg",
+    "date": "SEP 2026",
+    "readTime": "12 MIN READ"
+  },
+  {
+    "url": "/guides/best-gacha-games-2026.html",
+    "title": "Best Gacha Games in 2026: The Games Actually Worth Playing in September",
+    "description": "A realistic review of the best gacha games in 2026: Genshin Impact, Wuthering Waves, Honkai: Star Rail, Endfield, and ZZZ evaluated on combat and F2P fairness.",
+    "category": "Gaming & Entertainment",
+    "image": "/images/card-gacha-games.jpg",
+    "date": "SEP 2026",
+    "readTime": "13 MIN READ"
+  },
+  {
+    "url": "/guides/how-to-remove-almost-any-stain.html",
+    "title": "How to Remove Almost Any Stain: A Practical Guide and When to Give Up",
+    "description": "A practical, fabric-safe guide to removing blood, oil, coffee, ink, sweat, and red wine stains. Learn what works, what damages clothes, and when to stop.",
+    "category": "Home & Life",
+    "image": "/images/card-stain-removal.jpg",
+    "date": "SEP 2026",
+    "readTime": "11 MIN READ"
+  }
+]

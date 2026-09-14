@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Products & Tools — Akashadex</title>
+  <meta name="description"
+    content="Practical guides, workbooks, calculators and reference tools built from real research — so you can make better decisions, faster.">
+  <link rel="canonical" href="https://akashadex.com/store/">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta property="og:title" content="Digital Products & Tools — Akashadex">
+  <meta property="og:description"
+    content="Practical guides, workbooks, calculators and reference tools built from real research — so you can make better decisions, faster.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akashadex.com/store/">
+  <meta property="og:site_name" content="Akashadex">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=6">
+</head>
+
+<body>
+
+  <header class="site-header site-header-inner">
+    <div class="wrap">
+      <a href="/" class="brand-link">
+        <img src="/images/favicon.png" alt="Akashadex" class="brand-logo">
+        <span class="brand-text">Akashadex</span>
+      </a>
+
+      <div class="header-nav-group">
+        <nav class="site-nav" id="siteNav">
+          <a href="/guides/">Guides</a>
+          <a href="/tools/">Tools</a>
+          <a href="/data/">Data</a>
+          <a href="/store/" class="active">Products</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact Us</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="search-btn" id="searchBtn" aria-label="Search" title="Search (Ctrl+K)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Toggle Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Products Hero Section -->
+  <section class="products-hero-section">
+    <div class="wrap">
+      <div class="products-hero-grid">
+        <div class="products-hero-left">
+          <span class="eyebrow-orange">DIGITAL PRODUCTS</span>
+          <h1 class="products-hero-title">Research that goes beyond reading.</h1>
+          <p class="products-hero-sub">Practical guides, workbooks, calculators and reference tools built from real research — so you can make better decisions, faster.</p>
+
+          <!-- Search Input -->
+          <div class="products-search-wrap">
+            <svg class="search-lens-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="productSearchInput" 
+              class="mockup-search-input" 
+              placeholder="Search products by title, topic, or keyword..."
+              aria-label="Search products by title, topic, or keyword"
+              autocomplete="off"
+            >
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="products-pills-row" id="productCategoryFilters">
+            <!-- Dynamically populated by js/products-loader.js -->
+          </div>
+        </div>
+
+        <div class="products-hero-right">
+          <div class="hero-product-showcase">
+            <img src="/images/card-social-security.png" alt="2027 Social Security & Medicare Money Guide" class="showcase-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Product Banner -->
+  <section class="section" style="padding-top: 1rem; padding-bottom: 2.5rem;">
+    <div class="wrap">
+      <div class="featured-product-banner">
+        <div class="featured-banner-content">
+          <div class="featured-top-tags">
+            <span class="tag-featured">FEATURED</span>
+            <span class="tag-submeta">GUIDE · 50+ PAGES · PDF</span>
+          </div>
+          <h2 class="featured-banner-title">2027 Social Security &amp; Medicare Money Guide</h2>
+          <p class="featured-banner-desc">A practical reference for understanding COLA, Medicare premiums, spousal benefits, survivor benefits and the numbers that actually matter.</p>
+          
+          <div class="featured-specs-row">
+            <span>📄 50+ pages</span>
+            <span>📊 Calculations</span>
+            <span>🔗 Sources</span>
+          </div>
+
+          <div class="featured-buy-row">
+            <span class="featured-price">$19.00</span>
+            <a href="/store/medicare-explained.html" class="btn-orange-cta">View Product &rarr;</a>
+          </div>
+        </div>
+
+        <div class="featured-banner-media">
+          <img src="/images/card-retirement.png" alt="2027 Social Security & Medicare Guide Book" class="featured-mockup-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse All Products Section -->
+  <section class="section" style="padding-top: 1rem; padding-bottom: 4.5rem;">
+    <div class="wrap">
+      <div class="browse-header-row">
+        <h2 class="browse-title">Browse All Products</h2>
+        <div class="browse-controls-right">
+          <span class="mockup-count-badge" id="productsCountBadge">6 products · 5 categories</span>
+          <label for="productSortSelect">Sort by:</label>
+          <select id="productSortSelect" class="mockup-sort-select">
+            <option value="newest">Newest</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 4-Column Product Cards Grid -->
+      <div class="products-cards-grid" id="productsGrid">
+        <!-- Rendered dynamically by js/products-loader.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Built From Research Section -->
+  <section class="built-from-research-section">
+    <div class="wrap">
+      <h3 class="built-section-heading">Built from research. Designed for use.</h3>
+      <div class="built-grid">
+        <div class="built-col">
+          <div class="built-icon">📖</div>
+          <h4>Evidence first</h4>
+          <p>Sources are clearly documented.</p>
+        </div>
+        <div class="built-col">
+          <div class="built-icon">🎯</div>
+          <h4>Practical by design</h4>
+          <p>Turn complicated information into something you can actually use.</p>
+        </div>
+        <div class="built-col">
+          <div class="built-icon">🛡️</div>
+          <h4>Transparent</h4>
+          <p>See what's confirmed, projected, and where the numbers come from.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <!-- Column 1 — Brand -->
+        <div class="footer-col footer-col-brand">
+          <a href="/" class="footer-brand">
+            <img src="/images/logo.png" alt="Akashadex" class="footer-logo">
+            <span class="footer-brand-name">Akashadex</span>
+          </a>
+          <p class="footer-tagline">Clear information for better decisions.</p>
+          <p class="footer-desc">Research-backed guides, practical tools and useful data — explained in plain language.
+          </p>
+        </div>
+
+        <!-- Column 2 — Explore -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/store/">Tools</a></li>
+            <li><a href="/guides/">Data</a></li>
+            <li><a href="/guides/">Topics</a></li>
+            <li><a href="/#guides">Latest</a></li>
+            <li><a href="/guides/">Popular Guides</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 — Resources -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="/guides/2027-social-security-cola.html">Featured Guides</a></li>
+            <li><a href="/store/">Calculators</a></li>
+            <li><a href="/store/">Checklists</a></li>
+            <li><a href="/store/">Digital Products</a></li>
+            <li><a href="/about/">Research</a></li>
+            <li><a href="/about/">Sources</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 — Company -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="/about/">About Akashadex</a></li>
+            <li><a href="/about/">How We Research</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/privacy/">Terms</a></li>
+            <li><a href="/privacy/">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Full-Width -->
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          Akashadex provides educational information and general research. Content is not financial, legal, tax,
+          medical, or professional advice. For important decisions, verify information with the relevant government
+          agency, primary source, or qualified professional.
+        </div>
+        <div class="footer-bottom-bar">
+          <div class="footer-copyright">
+            &copy; 2026 Akashadex. All rights reserved.
+          </div>
+          <div class="footer-social">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.67a1.66 1.66 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66 1.66 1.66 0 0 0-1.66-1.66z" />
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/products-loader.js"></script>
+</body>
+
+</html>
